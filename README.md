@@ -1,4 +1,4 @@
-# <img src="https://github.com/saber-notes/saber/raw/main/assets/icon/icon.png" width="30" height="30" alt="Logo"> Saber
+# <img src="assets/icon/icon.png" width="30" height="30" alt="Logo"> Saber Notes with AI
 
 [<img src='https://github.com/saber-notes/saber/blob/main/assets_raw/badges/google-play-badge.svg'
     alt='Get it on Google Play'
@@ -33,6 +33,15 @@
 [Tiếng Việt](https://github.com/saber-notes/saber/blob/main/README-vi.md)
 
 Saber is the notes app built for handwriting.
+
+**Saber Notes with AI** is an advanced features-fork of Saber, integrated with OpenRouter. It brings state-of-the-art AI intelligence directly alongside your handwriting canvas.
+
+### ✨ AI Fork Specific Features:
+- **Intelligent Sidebar Companion:** Quick-access AI chat to brainstorm ideas, explain concepts, or review mathematical expressions directly next to your notes.
+- **Auto Notebook Screen Capture:** Automatically snap and attach a screenshot of your active notebook area whenever you send a message, under your full toggle control.
+- **On-Device System Instructions:** Personalize AI behavior and guidelines securely stored on your local hardware.
+- **Persistent Chat Memory:** Chat conversations are fully preserved across separate application sessions. Your chats are safely cached on-device and will only clear when you explicitly tap the clear button.
+- **Privacy-First Vaulting:** API keys and local settings are strictly kept in securely encrypted local storage.
 
 It's designed to be as simple and intuitive as possible, while still delivering unique features that you'll actually use. Additionally, Saber is available across all your devices, large and small, and syncs between them seamlessly.
 

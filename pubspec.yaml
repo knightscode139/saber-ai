@@ -162,6 +162,11 @@ dependencies:
   image: ^4.8.0
   pool: ^1.5.2
 
+  flutter_ai_toolkit: ^1.0.0
+  flutter_markdown_latex: ^0.3.4
+  flutter_markdown: ^0.7.3
+  markdown: ^7.1.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

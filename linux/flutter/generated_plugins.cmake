@@ -11,6 +11,7 @@ list(APPEND FLUTTER_PLUGIN_LIST
   irondash_engine_context
   open_file_linux
   printing
+  record_linux
   screen_retriever_linux
   sentry_flutter
   super_native_extensions
