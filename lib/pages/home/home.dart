@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:saber/components/home/sentry_consent_dialog.dart';
 import 'package:saber/components/navbar/responsive_navbar.dart';
 import 'package:saber/components/settings/update_manager.dart';
 import 'package:saber/components/theming/dynamic_material_app.dart';
@@ -44,7 +43,6 @@ class _HomePageState extends State<HomePage> {
     await null; // initState must be completed before using context
     if (!mounted) return;
     UpdateManager.showUpdateDialog(context);
-    SentryConsentDialog.showIfNeeded(context);
   }
 
   void _setState() {
@@ -103,20 +101,20 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       mainContent,
                       Positioned(
-                        left: 12,
-                        top: MediaQuery.of(context).padding.top + 12, // Align with the top layout elements gracefully (no blocking, perfectly placed)
+                        left: 16,
+                        bottom: 16, // Simetrik yerleşim: Sağ taraftaki NewNoteButton ile tam aynı hizada
                         child: ListenableBuilder(
                           listenable: chatPanelController,
                           builder: (context, _) {
                             if (chatPanelController.isOpen) return const SizedBox.shrink();
                             return SizedBox(
-                              width: 32,
-                              height: 32,
-                              child: FloatingActionButton.small(
+                              width: 56,
+                              height: 56, // Sağdaki NewNoteButton ile birebir aynı boyutta (56x56)
+                              child: FloatingActionButton(
                                 heroTag: 'chat-toggle',
                                 tooltip: 'AI Sohbet',
                                 onPressed: () => chatPanelController.toggle(),
-                                child: const Icon(Icons.auto_awesome, size: 14),
+                                child: const Icon(Icons.auto_awesome),
                               ),
                             );
                           },
