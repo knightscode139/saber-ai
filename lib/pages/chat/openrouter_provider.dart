@@ -1,3 +1,6 @@
+/// 🤖 Generated wholely or partially with Hermes Agent
+library;
+
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
@@ -106,6 +109,9 @@ class OpenRouterProvider implements LlmProvider {
       'model': _model,
       'messages': messages,
       'stream': true,
+      'tools': [
+        {'type': 'openrouter:web_search'}
+      ],
     };
   }
 
